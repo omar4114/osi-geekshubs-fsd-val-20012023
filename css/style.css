@@ -3,79 +3,98 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .nintendoswitch {
     display: flex;
 }
 
-.joyconizq {
+.joycon {
     background-color: white;
-    width: 140px;
+    width: 110px;
     height: 300px;
-    border-top-left-radius: 90px;
-    border-bottom-left-radius: 90px;
     display: flex;
     position: relative;
 }
 
-.menos {
+#joyconIzq {
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+}
+
+.gatillo {
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: -1;
+}
+
+#gatilloIzq {
+    border-top-left-radius: 90px;
+    left: 10%;
+}
+
+#menos {
     background-color: black;
     width: 15px;
     height: 5px;
     position: absolute;
-    right: 20px;
     top: 20px;
+    right: 20px;
 }
 
-.joystickIzq {
+.joystick {
     background-color: black;
     width: 50px;
     height: 50px;
     border-radius: 50px;
     position: absolute;
+}
+
+#joystickIzq {
     top: 20%;
     left: 35%;
 }
 
-.arriba {
+.botonesPrinc {
     background-color: black;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#arriba {
     top: 50%;
     left: 45%;
 }
 
-.derecha {
-    background-color: black;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    position: absolute;
+#derecha {
     top: 57%;
-    left: 60%;
+    left: 65%;
 }
 
-.abajo {
-    background-color: black;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    position: absolute;
+#abajo {
     top: 64%;
     left: 45%;
 }
 
-.izquierda {
-    background-color: black;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    position: absolute;
+#izquierda {
     top: 57%;
-    left: 30%;
+    left: 25%;
 }
 
 .captura {
@@ -83,7 +102,7 @@ body {
     width: 20px;
     height: 20px;
     position: absolute;
-    top: 73%;
+    top: 75%;
     left: 65%;
 }
 
@@ -93,17 +112,17 @@ body {
     background-color: black;
 }
 
-.joyconder {
-    background-color: white;
-    width: 140px;
-    height: 300px;
+#joyconDer {
     border-top-right-radius: 90px;
     border-bottom-right-radius: 90px;
-    display: flex;
-    position: relative;
 }
 
-.masHorizontal {
+#gatilloDer {
+    border-top-right-radius: 90px;
+    left: 35%;
+}
+
+#masHorizontal {
     background-color: black;
     width: 15px;
     height: 5px;
@@ -112,7 +131,7 @@ body {
     left: 20px;
 }
 
-.masVertical {
+#masVertical {
     background-color: black;
     width: 5px;
     height: 15px;
@@ -121,28 +140,37 @@ body {
     left: 25px;
 }
 
-.botonX {
-    background-color: black;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#botonX {
     top: 15%;
     left: 35%;
 }
 
-.botonA {
+#botonA {
+    top: 22%;
+    left: 55%;
+}
+
+#botonB {
+    top: 29%;
+    left: 35%;
+}
+
+#botonY {
+    top: 22%;
+    left: 15%;
+}
+
+#joystickDer {
+    top: 50%;
+    left: 25%;
+}
+
+.home {
     background-color: black;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 25%;
-    left: 50%;
+    top: 75%;
+    right: 65%;
 }
